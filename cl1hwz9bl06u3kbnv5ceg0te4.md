@@ -4,6 +4,11 @@
 
 I created "reference implementation" based on my recent post on [How to design better APIs](https://r.bluethl.net/how-to-design-better-apis). I tried my best to practically implement all tips mentioned in the article. It's built with Next.js. [Check it out here](https://github.com/rbluethl/better-apis).
 
+
+### Walk-through Video
+
+%[https://www.youtube.com/watch?v=H3YLiCtGits]
+
 ### Preface
 
 On March 3rd 2022, I published an article on [How to design better APIs](https://r.bluethl.net/how-to-design-better-apis) on my [Hashnode blog](https://r.bluethl.net). For some reason, it got quite popular — by the time of writing this, it has over 325 reactions, 34 comments (including my answers) and 112k+ views. It even made it to the [front page of Hacker News](https://news.ycombinator.com/item?id=30647784) on March 12th, which is kind of a big deal for me.
