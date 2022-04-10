@@ -159,7 +159,7 @@ interface Props {
 
 ### Emits
 
-We also want to get an event when a button is actually clicked. We therefore define emits using the `defineEmits` compiler macro. Whenever the button is clicked, we call the `click` event, passing the actual click event payload.
+We also want to get an event when the button is actually clicked. We therefore define emits using the `defineEmits` compiler macro. Whenever the button is clicked, we call the `click` event, passing the actual click event payload.
 
 ```diff
 // MagicButton.vue
