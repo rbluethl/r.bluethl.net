@@ -381,7 +381,7 @@ const text = ref('Ronald Blüthl')
 
 ## 7. Summary
 
-We built two minimalistic components, `MagicButton` and `MagicInput` that cover 95% of the functionality that is typically needed when creating custom components.
+We built two minimalistic components, `MagicButton` and `MagicInput`, that cover probably 95% of the functionality that is typically needed when creating custom components.
 
 - Using TypeScript to enjoy full type safety for all our components 
 - `script setup` to make use of the Composition API in a very convenient way
@@ -406,6 +406,7 @@ In Vue, there are sometimes many ways to achieve the desired result. I usually t
 
 - Use single quotes instead of double quotes
 - Infer the data type if obvious (`const text = ref('Ronald')`) instead of (`const text = ref<string>('Ronald')`)
+- Define the data type if it must be explicit (e.g. `const text = ref<string | null>(null)`)
 - Don‘t use semicolons (they are not necessary and improve readability)
 - Always extract a `Props` interface instead of defining an inline object
 - Prefer `initial-value="Ronald Blüthl"` over `:initial-value="'Ronald Blüthl'"` when NOT passing a variable
@@ -446,6 +447,6 @@ const addName = (name: string) => {
 
 ## 9. Final words
 
-So this is my practical approach to build Vue 3 components, which I used for many projects in the last couple of months. As mentioned at the beginning of the article, I've been using Vue for many years already, and I think that it really grew as a framework. The combination of using the Composition API with TypeScript and `script setup` is a really nice way to write clean and concise components in Vue 3 that works very well.
+So this is my practical approach to building Vue 3 components, which I used for many projects in the last couple of months. As mentioned at the beginning of the article, I've been using Vue for many years already, and I think that it really grew as a framework. The combination of using the Composition API with TypeScript and `script setup` is a really nice way to write clean and concise components in Vue 3. It works very well for me, and I hope it does for you too.
 
-I hope there are some tips and best practices you can pick up. If you have any questions, just let me know in the comments below. If you found this post useful, feel free to [follow me on Twitter](https://twitter.com/rbluethl), as I document my journey as an indie hacker there. My DMs are open (I'm always happy to help). 🙌
+If you have any questions, just let me know in the comments below. If you found this post useful, feel free to [follow me on Twitter](https://twitter.com/rbluethl), as I document my journey as an indie hacker there. My DMs are open (I'm always happy to help). 🙌
