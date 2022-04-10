@@ -14,7 +14,7 @@ Starting with Vue 3, TypeScript is now a first-class citizen of the framework (V
 
 As mentioned before, the [Composition API](https://vuejs.org/guide/extras/composition-api-faq.html) is probably the most important concept to understand in comparison to Vue 2. In Vue 2, we only had the Options API (where we define `data`, `props`, `methods`, and so on in our components), where in Vue 3, we *also* have the more flexible Composition API, that exposes reactive data and logic, which can be reused in other components as well.
 
-I‘d argue that it generally makes sense to leverage the Composition API for new Vue 3 projects, as it‘s a lot more versatile and allows for easier sharing of logic and data. In fact, I haven‘t written an Options API-style component in Vue 3 yet, but we‘re getting there. ✌️
+I‘d argue that it generally makes sense to use the Composition API for new Vue 3 projects, as it‘s a lot more versatile and allows for easier sharing of logic and data. In fact, I haven‘t written an Options API-style component in Vue 3 yet, but we‘re getting there. ✌️
 
 ## 3. Syntax
 
@@ -50,7 +50,7 @@ export default {
 
 **✅ Option 2 — `script setup`**
 
-The second option is to leverage the [`script setup`](https://vuejs.org/api/sfc-script-setup.html#script-setup) syntax, which has a couple of benefits (less verbose, exposure of top level bindings, better TypeScript support, … I will explain them in detail as we proceed). So this is what we‘re going to use.
+The second option is to use the [`script setup`](https://vuejs.org/api/sfc-script-setup.html#script-setup) syntax, which has a couple of benefits (less verbose, exposure of top level bindings, better TypeScript support, … I will explain them in detail as we proceed). So this is what we‘re going to use.
 
 ```javascript
 <script setup>
@@ -360,7 +360,7 @@ One minor thing to notice here is that we need to cast the input event's target 
 
 ### Wrapping up (again)
 
-This time, we created a custom `<MagicInput>` component that first allowed us to use `v-model`, leverage reactivity using `ref` and `computed` and also execute custom logic. We can now use our custom component as follows.
+This time, we created a custom `<MagicInput>` component that allowed us to use `v-model`, leverage reactivity using `ref` and `computed` and also execute custom logic. We can now use our custom component as follows.
 
 ```javascript
 // Home.vue
