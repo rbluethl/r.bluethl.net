@@ -99,7 +99,7 @@ Our initial draft renders a default HTML button element with the text "Click me"
 
 ### Props
 
-We want to accept a text that the button should display. Therefore, we first add a `Props` interface to the component, which defines the shape of the props that can be passed. We then call `defineProps<Props>()` that exposes our props.
+We want to accept a text that the button should display. Therefore, we first add a `Props` interface to the component, which defines the shape of the props that can be passed. We then call `defineProps<Props>()` to expose our props.
 
 ```diff
 // MagicButton.vue
@@ -133,7 +133,7 @@ import MagicButton from './components/MagicButton.vue'
 
 ### Default values
 
-We want to add another prop and set a default value if not explicitly set from outside. First, we add another prop called `loading`, which accepts a boolean value. Since we don't want to explicitly set this prop, we use the `withDefaults` compiler macro to define a default value. That way, the compiler knows that this property is optional and won't warn us when not setting it. We also set the `button` state to `disabled` if `loading` is true and show a different text in that case.
+We want to be able to set the loading state of the button, which should be an optional property. Therefore, we add another prop called `loading`, which accepts a boolean value. Since we don't want to explicitly set this prop, we use the `withDefaults` compiler macro to define a default value. That way, the compiler knows that this property is optional and won't warn us when not setting it. We also set the `button` state to `disabled` if `loading` is true and show a different text in that case.
 
 ```diff
 // MagicButton.vue
