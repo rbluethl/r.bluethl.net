@@ -106,7 +106,7 @@ We want to accept a text that the button should display. Therefore, we first add
 
 <script setup lang="ts">
 + interface Props {
-+ text: string
++  text: string
 + }
 
 + defineProps<Props>()
