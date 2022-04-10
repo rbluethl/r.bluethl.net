@@ -320,7 +320,7 @@ const text = ref(props.initialValue)
 </template>
 ```
 
-So now we can use the `textLength` computed property that always returns the current length of the text. Please note that, because `text` is a `ref`, we need to call `.value` (e.g. `text.value.length`) before to get the actual value of the property.
+So now we can use the `textLength` computed property that always returns the current length of the text. Please note that, because `text` is a `ref`, we need to call `.value` (e.g. `text.value.length`) to get the actual value of the property.
 
 ### Functions
 
