@@ -391,6 +391,8 @@ We built two minimalistic components, `MagicButton` and `MagicInput` that cover 
 - `ref` for reactive data
 - `computed` for reactive read-only data
 
+Using these few techniques, we're able to pass data to a component, receive data from a component, bind values in both ways and create reactive state and logic. 
+
 ## 8. General considerations
 
 In Vue, there are sometimes many ways to achieve the desired result. I usually try to be as consistent as possible, that's why I make sure to follow these rules (most of which are suggested in the Vue documentation as well). 
