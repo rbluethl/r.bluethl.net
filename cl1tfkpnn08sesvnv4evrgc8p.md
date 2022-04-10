@@ -142,7 +142,7 @@ We want to add another prop and set a default value if not explicitly set from o
 interface Props {
   text: string
 + loading: boolean
-  }
+}
 
 + withDefaults(defineProps<Props>(), {
 +  loading: false
