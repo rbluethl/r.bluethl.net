@@ -349,14 +349,12 @@ const textLength = computed(() => text.value.length)
 <template>
 + <input 
 +   v-model="text"
-+   @input="logText(($event.target! as HTMLInputElement).value)"
++   @input="logText($event.target.value)"
 +   type="text"
 + />
   <p>Your text is {{ textLength }} characters long.</p>
 </template>
 ```
-
-One minor thing to notice here is that we need to cast the input event's target to `HTMLInputElement` so that we're able to access the `value` property.
 
 ### Wrapping up (again)
 
@@ -383,7 +381,7 @@ const text = ref('Ronald Blüthl')
 
 ## 7. Summary
 
-We built two minimalistic components, `MagicButton` and `MagicInput` that cover 95% of the functionality that is usually needed when creating robust components.
+We built two minimalistic components, `MagicButton` and `MagicInput` that cover 95% of the functionality that is typically needed when creating custom components.
 
 - Using TypeScript to enjoy full type safety for all our components 
 - `script setup` to make use of the Composition API in a very convenient way
