@@ -358,7 +358,7 @@ const textLength = computed(() => text.value.length)
 
 ### Wrapping up (again)
 
-This time, we created a custom `<MagicInput>` component that allowed us to use `v-model`, leverage reactivity using `ref` and `computed` and also execute custom logic. We can now use our custom component as follows.
+This time, we created a custom `<MagicInput>` component that allows us to use `v-model`, leverage reactivity using `ref` and `computed` and also execute custom logic. We can now use our custom component as follows.
 
 ```javascript
 // Home.vue
@@ -372,10 +372,10 @@ const text = ref('Ronald Blüthl')
 
 <template>
   <!-- First version using v-model -->
-  <MagicInput v-model="text"></MagicInput>
+  <MagicInput v-model="text" />
 
   <!-- Second version using initial value -->
-  <MagicInput initial-value="Ronald Blüthl"></MagicInput>
+  <MagicInput initial-value="Ronald Blüthl" />
 </template>
 ```
 
@@ -391,7 +391,7 @@ We built two minimalistic components, `MagicButton` and `MagicInput` that cover 
 - `ref` for reactive data
 - `computed` for reactive read-only data
 
-Using these few techniques, we're able to pass data to a component, receive data from a component, bind values in both ways and create reactive state and logic. 
+Using these few techniques, we're able to pass data to a component, receive data from a component, bind values in both ways and create reactive state and logic.
 
 ## 8. General considerations
 
@@ -404,6 +404,9 @@ In Vue, there are sometimes many ways to achieve the desired result. I usually t
 
 ### Best practices
 
+- Use single quotes instead of double quotes
+- Infer the data type if obvious (`const text = ref('Ronald')`) instead of (`const text = ref<string>('Ronald')`)
+- Don‘t use semicolons (they are not necessary and improve readability)
 - Always extract a `Props` interface instead of defining an inline object
 - Prefer `initial-value="Ronald Blüthl"` over `:initial-value="'Ronald Blüthl'"` when NOT passing a variable
 - Prefer `loading` over `:loading="true"` when passing boolean props
@@ -419,7 +422,6 @@ interface Props {
 }
 
 const props = defineProps<Props>()
-
 const text = ref(props.initialText)
 ```
 
@@ -444,6 +446,6 @@ const addName = (name: string) => {
 
 ## 9. Final words
 
-So this is my practical approach to build Vue 3 components, which I used for many projects in the last couple of months. As mentioned at the beginning of the article, I've been using Vue for many years already, and I think that it really grew as a framework. The combination of using the Composition API with TypeScript and `script setup` is a really nice way to write clean and concise components.
+So this is my practical approach to build Vue 3 components, which I used for many projects in the last couple of months. As mentioned at the beginning of the article, I've been using Vue for many years already, and I think that it really grew as a framework. The combination of using the Composition API with TypeScript and `script setup` is a really nice way to write clean and concise components in Vue 3 that works very well.
 
 I hope there are some tips and best practices you can pick up. If you have any questions, just let me know in the comments below. If you found this post useful, feel free to [follow me on Twitter](https://twitter.com/rbluethl), as I document my journey as an indie hacker there. My DMs are open (I'm always happy to help). 🙌
