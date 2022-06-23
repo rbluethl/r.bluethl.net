@@ -89,8 +89,9 @@ There‘s a saying.
 Make it work, make it fast, make it beautiful.
 The order is important.
 Whatever you do, don‘t lose yourself in tiny details early on.
-It‘s more important to deliver a working feature that delivers value to a customer rather than building it most beautifully.
+It‘s more important to ship a working feature that delivers value to a customer rather than building it in the most beautiful way.
 Focus, get in the zone and don‘t go in circles.
+Execution is everything.
 
 ## 9. Say „no“ more often
 
