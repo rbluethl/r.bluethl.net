@@ -10,7 +10,7 @@ Every single line of code adds complexity to your software. It needs to be devel
 
 > **Good code reads like a book.**
 
-When reading code in an unknown project and you quickly know and understand what’s going on, then you know you’re dealing with good code. Great code should explain itself — even without comments. Comments can add value at times, but generally speaking, code should also be readable without plenty of comments.
+If you’re reading code in an unknown project and you quickly know and understand what’s going on, then you know you’re dealing with good code. Great code should explain itself — even without comments. Comments can add value at times, but generally speaking, code should also be readable without plenty of comments.
 
 > **Don’t add code unless deemed necessary.**
 
