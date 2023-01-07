@@ -2,7 +2,7 @@
 
 I claim that all (user) data in a database should be mutable by default. Always. Well, *almost* all data. There are only four exceptions.
 
-### **1\. Primary key**
+### **1\. The primary key**
 
 A *dedicated* column that serves as the unique identifier of the record (ideally, a `GUID` or a consecutive number). *Every* table — without an exception, and I mean it — **must have** a *separate* column that uniquely identifies the record.
 
