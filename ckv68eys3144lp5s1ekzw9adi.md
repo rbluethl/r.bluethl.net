@@ -1,4 +1,4 @@
-## We went to Ecuador to build an App
+# We went to Ecuador to build an App
 
 ## A Short Backstory
 
