@@ -1,4 +1,4 @@
-## How to design better APIs
+# How to design better APIs
 
 APIs are awesome, but they're also extremely hard to design. When creating an API from scratch, you need to get many details right. From basic security considerations to using the right HTTP methods, implementing authentication, deciding which requests and responses you should accept and return, ... the list goes on.
 
