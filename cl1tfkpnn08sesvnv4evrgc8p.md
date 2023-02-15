@@ -1,4 +1,4 @@
-## How to build robust Vue 3 components
+# How to build robust Vue 3 components
 
 Vue has been my go-to framework for the last couple of years. It gets the job done, it‘s easy to use, and I understand it quite well. Over time, I had built up some great boilerplate code to bootstrap new projects. The scaffold project had `TypeScript` support, used `vue-class-component`, `vuex`, `vue-router` and had also set up some neat tooling stuff. Every new app started off with this template, which I was very happy with. The only problem: That was Vue 2.x.
 
