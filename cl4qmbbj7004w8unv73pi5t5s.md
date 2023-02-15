@@ -1,4 +1,4 @@
-## Rules to live (and work) by
+# Rules to live (and work) by
 
 We just came back from our three-week vacation in Scandinavia.
 While on the road with our camper van, I had some time to reflect on the last couple of months.
