@@ -1,4 +1,4 @@
-## How to implement better APIs
+# How to implement better APIs
 
 ### TL;DR
 
